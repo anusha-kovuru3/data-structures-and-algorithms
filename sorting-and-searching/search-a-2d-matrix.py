@@ -1,3 +1,4 @@
+# Approach - 1 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         n =  len(matrix)
@@ -22,3 +23,24 @@ class Solution:
         return False
     
 # TC : O(n * log m)
+
+# Approach - 2
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        n =  len(matrix)
+        m = len(matrix[0])
+
+        row = 0
+        col = m - 1
+        while row < n and col > -1:
+            curr = matrix[row][col]
+            if curr == target:
+                return True
+            elif curr < target:
+                row += 1
+            elif curr > target:
+                col -= 1
+        
+        return False
+
+# TC : O(N + M)
