@@ -5,7 +5,8 @@ This repository contains my topic-wise learnings in Data Structures and Algorith
 ---
 
 ## Topics Covered
-- Sorting and Searching
-- Arrays and Strings
-- Recursion + Backtracking
+- Arrays
+- Hashing
+- Binary Search
+- 
   
